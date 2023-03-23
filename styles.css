@@ -15,12 +15,18 @@ html, body {
   height: 100%;
 }
 
+img, svg {
+   display: block;
+   max-width: 100%;
+}
+
 /* ------------------ ROOT ------------------ */
 
 :root {
     --white: #fafafa;
     --grey: #e5e5e5;
     --pink: #F22C86;
+    --dark-grey: #9F9F9F;
 }
 
 
@@ -28,8 +34,8 @@ html, body {
 
 .container {
     display: grid;
-    grid-template-columns: 14% 4fr;
-    grid-template-rows: 10% 4fr;
+    grid-template-columns: 200px 4fr;
+    grid-template-rows: 80px 4fr;
     height: 100%;
 }
 
@@ -40,12 +46,13 @@ html, body {
     background-color: var(--white);
 }
 
+
+
 /* ------------------ SIDEBAR ------------------ */
 
 .sidebar {
     grid-row: 2 / 3;
     background-color: var(--white);
-    border: 1px solid red;
     padding: 15px;
 
     display: grid;
@@ -57,22 +64,29 @@ html, body {
     margin-top: 30px;
 }
 
-.sidebar-list, .settings-list {
-    display: flex;
-    border: 1px solid red;
-}
-
-.sidebar li:hover {
+.sidebar-list ul li:hover {
    color: var(--pink);
    cursor: pointer;
+}
+
+.sidebar-list ul li:hover i {
+    color: var(--pink);
+    cursor: pointer;
+ }
+
+.sidebar i {
+    font-size: 15px;
+    color: var(--dark-grey);
+    padding-right: 12px;
+    padding-left: 12px;
 }
 
 .sidebar li {
     list-style-type: none;
     margin-bottom: 30px;
     font-size: 0.9rem;
-    border: 1px solid red;
 }
+
 
 /* ------------------ MAIN CONTENT------------------ */
 
