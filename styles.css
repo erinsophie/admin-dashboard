@@ -23,11 +23,14 @@ img, svg {
 /* ------------------ ROOT ------------------ */
 
 :root {
-    --white: #fafafa;
+    --white: #FDFEFE;
     --grey: #e5e5e5;
-    --pink: #F22C86;
     --dark-grey: #9F9F9F;
+    --pink: #F22C86;
     --orange: #FF8E17;
+    --yellow: #FFBE3F;
+    --purple: #9847D8;
+    --light-blue: #53C8F8;
     --pink-purple-gradient: linear-gradient(to right bottom, #fb48a5, #e237aa, #c62bb0, #a525b4, #7d26b8);
 }
 
@@ -77,6 +80,7 @@ img, svg {
     align-items: center;
     padding: 20px;
     color: var(--dark-grey);
+    font-size: 1.5rem;
 }
 
 .header-icons {
@@ -115,8 +119,8 @@ img, svg {
     padding: 15px;
 
     display: grid;
-    grid-template-rows: auto auto;
-    gap: 50px;
+    grid-template-rows: 300px 300px;
+    gap: 60px;
 }
 
 .sidebar-list {
@@ -138,6 +142,11 @@ img, svg {
 .sidebar-list ul li:hover {
     color: var(--pink);
  }
+
+ .sidebar-list ul li:hover i {
+    color: var(--pink);
+ }
+
 
 i {
     color: var(--dark-grey);
@@ -162,16 +171,95 @@ i:hover {
 }
 
 .main-content div {
-    background-color: pink;
+    background-color: var(--white);
 }
+
+/* CARDS */
+
+.main-content > * {
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+.card1-section1 p:last-child {
+    color: var(--dark-grey);
+    margin-top: 8px;
+}
+
 
 .card1 {
     grid-column: 1 / 6;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr;
+    grid-template-rows: 2fr 60px;
 }
 
-.line-graph-img {
-    width: 75%;
+.card1-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
+.bold {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #000000;
+}
+
+.card1-section2 {
+    grid-column: 2 / 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1-section2 div {
+    display: flex;
+    justify-content: space-around;
+    color: var(--dark-grey);
+
+}
+
+.card1-section3 {
+    grid-column: 1 / 4;
+
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.card1-tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.card1-tabs p:last-child {
+    color: var(--dark-grey);
+    margin-top: 6px;
+}
+
+.tab-icon1 {
+    color: var(--pink);
+}
+
+.tab-icon2 {
+    color: var(--purple);
+}
+
+.tab-icon3 {
+    color: var(--light-blue);
+}
+
+
+.tab-icon4 {
+    color: var(--yellow)
+}
+
+
+
 
 .card2 {
     grid-column: 6 / 9;
