@@ -228,17 +228,18 @@ i:hover {
    margin-bottom: 20px;
 }
 
-.card1-graph {
+.card1-graph-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: var(--dark-grey)
 }
 
-.card1-graph div:last-child {
+.card1-dates {
     display: flex;
-    justify-content: space-around;
+    gap: 30px;
+    color: var(--dark-grey);
 }
+
 
 .card1-section2 {
     display: flex;
@@ -369,7 +370,7 @@ i:hover {
     justify-content: space-between;
 }
 
-.mini1-section2 {
+.mini1-section2, .mini4-section2 {
     display: flex;
     justify-content: space-between;
 }
@@ -385,9 +386,7 @@ i:hover {
 
 .mini2 {
     background-image: var(--light-dark-purple);
- }
 
-.mini2 {
     display: flex;
     justify-content: space-between;
 }
@@ -400,24 +399,46 @@ i:hover {
 
 /* MINI 3 */
 
-
-
-
-
 .mini3 {
    background-image: var(--light-dark-blue);
+
+   display: flex;
+   justify-content: space-between;
 }
+
+.mini3-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main3-section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.time-select {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+/* MINI 4 */
 
 .mini4 {
     background-image: var(--yellow-orange);
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-    
 
 
 
-
-
+/* CARD 3*/
 
 .card3 {
     grid-column: 1 / 4;
