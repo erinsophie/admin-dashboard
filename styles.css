@@ -212,23 +212,27 @@ i:hover {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    border: 1px solid red;
 }
 
-.card1-section1 {
+.card1-dates {
     display: flex;
-    flex-direction: column;
+    gap: 30px;
+    color: var(--dark-grey);
+    border: 1px solid red;
 }
 
 .graph-img-container {
     display: flex;
     justify-content: center;
+    border: 1px solid red;
+    width: 100%;
 }
 
 .graph-img {
-    width: 80%;
-    
+    width: 100%;
 }
+
 
 /*
 
@@ -251,51 +255,6 @@ i:hover {
 }
 
 */
-
-.card1-dates {
-    display: flex;
-    gap: 30px;
-    color: var(--dark-grey);
-}
-
-
-.card1-section2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.tab {
-    display: flex;
-    gap: 8px;
-}
-
-.tab p:first-child {
-    color: var(--dark-grey);
-}
-
-.bold {
-    font-size: 1.2rem;
-    font-weight: bolder;
-    color: black;
-}
-
-
-.tab-icon1 {
-    color: var(--pink);
-}
-
-.tab-icon2 {
-    color: var(--purple);
-}
-
-.tab-icon3 {
-    color: var(--light-blue);
-}
-
-.tab-icon4 {
-    color: var(--yellow)
-}
 
 
 
@@ -472,6 +431,38 @@ i:hover {
 
 .card4 {
     grid-column: 4 / 9;
+}
+
+.tab {
+    display: flex;
+    gap: 8px;
+}
+
+.tab p:first-child {
+    color: var(--dark-grey);
+}
+
+.bold {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: black;
+}
+
+
+.tab-icon1 {
+    color: var(--pink);
+}
+
+.tab-icon2 {
+    color: var(--purple);
+}
+
+.tab-icon3 {
+    color: var(--light-blue);
+}
+
+.tab-icon4 {
+    color: var(--yellow)
 }
 
 
