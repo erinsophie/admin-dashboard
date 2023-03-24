@@ -127,7 +127,7 @@ img, svg {
 
     display: grid;
     grid-template-rows: 300px 300px;
-    gap: 60px;
+    gap: 120px;
 }
 
 .sidebar-list {
@@ -204,18 +204,33 @@ i:hover {
 }
 
 
+/* CARD 1 */
+
 
 .card1 {
     grid-column: 1 / 6;
 
     display: flex;
     flex-direction: column;
-    height: 100%;
+    justify-content: space-between;
 }
 
 .card1-section1 {
     display: flex;
+    flex-direction: column;
 }
+
+.graph-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.graph-img {
+    width: 80%;
+    
+}
+
+/*
 
 .card1-text {
     display: flex;
@@ -228,11 +243,14 @@ i:hover {
    margin-bottom: 20px;
 }
 
+
 .card1-graph-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+*/
 
 .card1-dates {
     display: flex;
@@ -245,7 +263,6 @@ i:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: 100%;
 }
 
 .tab {
@@ -288,8 +305,8 @@ i:hover {
     grid-column: 6 / 9;
 
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    flex-direction: column;  
+    justify-content: space-between;
 }
 
 .card2-img-container {
@@ -305,7 +322,6 @@ i:hover {
 .card2-stats {
     display: flex;
     gap: 10%;
-    height: 100%;
 }
 
 .card2-stats div {
@@ -442,7 +458,17 @@ i:hover {
 
 .card3 {
     grid-column: 1 / 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.todo-item {
+    
+}
+
+
 
 .card4 {
     grid-column: 4 / 9;
