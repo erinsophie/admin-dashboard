@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Admin Dashboard</title>
 </head>
@@ -106,83 +106,103 @@
         <div class="main-content">
 
           <div class="card1">
-            <div class="card1-section1">
+            <div class="card1-flex-container">
+              <div class="card1-section1">
+               <div class="card1-text">
+                <div>
+                  <p>Dashboard</p>
+                  <p>Overview of Latest Month</p>
+                </div>
+                <div>
+                  <p class="bold">$3468.96</p>
+                <p>Current Month Earnings</p>
+              </div>
               <div>
-                <p>Dashboard</p>
-              <p>Overview of lastest month</p>
-            </div>
+                <p class="bold">82</p>
+                <p>Current Month Sales</p>
+              </div>
+             </div>
 
-            <div>
-              <p class="bold">$3,468.96</p>
-              <p>Current month earnings</p>
-            </div>
-
-            <div>
-              <p class="bold">82</p>
-              <p>Current month sales</p>
-            </div>
+             <div class="card1-graph">
+              <div>
+                <div>
+                <p>Daily</p>
+                <p>Weekly</p>
+                <p>Monthly</p>
+                <p>Yearly</p>
+                </div>
+              </div>
+              <img class="graph-img" src="images/graph.svg" alt="line graph">
+             </div>
           </div>
 
-            <div class="card1-section2">
-              <div>
-                <span>Daily</span>
-                <span>Weekly</span>
-                <span>Monthly</span>
-                <span>Yearly</span>
+
+             <div class="card1-section2">
+                <div class="tab">
+                  <div>
+                  <i class="fa-solid fa-crown tab-icon1"></i>
+                 </div>
+                 <div>
+                  <p>Wallet Balance</p>
+                  <p>$4,567.53</p>
+                  </div>
+                </div>
+
+                <div class="tab">
+                  <div>
+                    <i class="fa-solid fa-heart tab-icon2"></i>
+                 </div>
+                 <div>
+                  <p>Referral Earning</p>
+                  <p>$1,645.53</p>
+                  </div>
+                </div>
+
+                <div class="tab">
+                  <div>
+                    <i class="fa-solid fa-arrow-trend-up tab-icon3"></i>
+                 </div>
+                 <div>
+                  <p>Estimate Sales</p>
+                  <p>$2,583.67</p>
+                  </div>
+                </div>
+
+                <div class="tab">
+                  <div>
+                    <i class="fa-solid fa-dollar-sign tab-icon4"></i>
+                 </div>
+                 <div>
+                  <p>Earning</p>
+                  <p>$56,247.81</p>
+                  </div>
+                </div>
               </div>
-              <img class="line-graph-img" src="images/graph.svg" alt="line chart">
             </div>
-
-
-
-            <div class="card1-section3">
-              <div class="card1-tabs">
-                <div>
-                <i class="fa-solid fa-crown tab-icon1"></i>
-              </div>
-              <div>
-                <p>Wallet balance</p>
-                <p>$4,563.57</p>
-              </div>
-             </div>
-
-             <div class="card1-tabs">
-              <div>
-                <i class="fa-solid fa-heart tab-icon2"></i>
-              </div>
-              <div>
-                <p>Referral Earning</p>
-                <p>$1.689.53</p>
-              </div>
-            </div>
-
-            <div class="card1-tabs">
-              <div>
-                <i class="fa-solid fa-arrow-trend-up tab-icon3"></i>
-              </div>
-              <div>
-                <p>Estimated sales</p>
-                <p>$2,851.57</p>
-              </div>
-             </div>
-
-             <div class="card1-tabs">
-              <div>
-                <i class="fa-solid fa-dollar-sign tab-icon4"></i>
-              </div>
-              <div>
-                <p>Earning</p>
-                <p>$52,567.56</p>
-              </div>
-             </div>
-
-
-
-            </div>
-
         </div>
   
-          <div class="card2">2</div>
+          <div class="card2">
+            <div>
+              <p>Traffic</p>
+            </div>
+            <div>
+              <img src="images/pie-chart.png" alt="pie chart">
+            </div>
+            <div class="card2-stats">
+              <div class="stat1">
+                <p>33%</p>
+                <p>Facebook</p>
+              </div>
+              <div class="stat2">
+                <p>55%</p>
+                <p>Youtube</p>
+              </div>
+              <div class="stat3">
+                <p>12%</p>
+                <p>Direct Search</p>
+              </div>
+            </div>
+          </div>
           <div class="mini-cards"></div>
           <div class="mini-cards"></div>
           <div class="mini-cards"></div>

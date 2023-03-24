@@ -8,7 +8,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 html, body {
@@ -80,7 +80,7 @@ img, svg {
     align-items: center;
     padding: 20px;
     color: var(--dark-grey);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .message p:last-child {
@@ -164,13 +164,14 @@ i:hover {
 
 /* ------------------ MAIN CONTENT------------------ */
 
+
 .main-content {
     background-color: var(--grey);
     padding: 30px;
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 350px 150px 450px;
+    grid-template-rows: 330px 150px 450px;
     gap: 20px;
 }
 
@@ -182,69 +183,68 @@ i:hover {
 
 .main-content > * {
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     font-size: 0.8rem;
 }
 
-.card1-section1 p:last-child {
-    color: var(--dark-grey);
-    margin-top: 8px;
+.card1-flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
-
 
 .card1 {
     grid-column: 1 / 6;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 0.6fr;
-    row-gap: 15px;
 }
 
 .card1-section1 {
     display: flex;
+}
+
+.card1-text {
+    display: flex;
     flex-direction: column;
+    width: 60%;
+}
+
+.card1-text p:last-child {
+   color: var(--dark-grey);
+   margin-bottom: 20px;
+}
+
+.card1-graph {
+    display: flex;
+    flex-direction: column;
+    color: var(--dark-grey)
+}
+
+.card1-graph div:last-child {
+    display: flex;
     justify-content: space-around;
+}
+
+.card1-section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.tab {
+    display: flex;
+    gap: 8px;
+}
+
+.tab p:first-child {
+    color: var(--dark-grey);
 }
 
 .bold {
     font-size: 1.2rem;
-    font-weight: 900;
-    color: #000000;
+    font-weight: bolder;
+    color: black;
 }
 
-.card1-section2 {
-    grid-column: 2 / 5;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card1-section2 div {
-    display: flex;
-    justify-content: space-around;
-    color: var(--dark-grey);
-
-}
-
-.card1-section3 {
-    grid-column: 1 / 5;
-
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-}
-
-.card1-tabs {
-    display: flex;
-    gap: 10px;
-}
-
-.card1-tabs p:last-child {
-    color: var(--dark-grey);
-    margin-top: 6px;
-}
 
 .tab-icon1 {
     color: var(--pink);
@@ -264,10 +264,16 @@ i:hover {
 
 
 
+/* CARD 2 */
 
 .card2 {
     grid-column: 6 / 9;
 }
+
+
+
+
+
 
 .card3 {
     grid-column: 1 / 4;
