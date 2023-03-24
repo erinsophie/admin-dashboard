@@ -151,6 +151,14 @@ img, svg {
     color: var(--pink);
  }
 
+ .settings-list ul li:hover i {
+    color: var(--pink);
+ }
+
+ .settings-list ul li:hover {
+    color: var(--pink);
+ }
+
 
 i {
     color: var(--dark-grey);
@@ -183,7 +191,7 @@ i:hover {
 
 .main-content > * {
     border-radius: 10px;
-    padding: 30px;
+    padding: 25px;
     font-size: 0.8rem;
 }
 
@@ -215,6 +223,7 @@ i:hover {
 .card1-graph {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     color: var(--dark-grey)
 }
 
@@ -269,6 +278,57 @@ i:hover {
 .card2 {
     grid-column: 6 / 9;
 }
+
+.card2-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card2-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-chart-img {
+    width: 70%;
+}
+
+.card2-stats {
+    display: flex;
+    gap: 10%;
+    height: 100%;
+}
+
+.card2-stats div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.traffic {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stat1 i {
+    color: var(--purple);
+    font-size: 0.6rem;
+}
+
+.stat2 i {
+    color: var(--pink);
+    font-size: 0.6rem;
+}
+    
+.stat3 i {
+    color: var(--yellow);
+    font-size: 0.6rem;
+}
+    
+    
 
 
 
