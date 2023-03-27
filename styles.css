@@ -429,7 +429,6 @@ i:hover {
 }
 
 
-
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   position: absolute;
@@ -504,11 +503,9 @@ i:hover {
 
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 .card4-section1 {
-    border: 1px solid red;
     display: flex;
     flex-grow: 1;
 }
@@ -517,24 +514,58 @@ i:hover {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    width: 50%;
-    border: 1px solid red;
+    width: 60%;
+    padding-right: 30px;
 }
 
-.card4-section2 {
-    border: 1px solid red;
+.card4-text button {
+    padding: 15px;
+    background-color: var(--pink);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card4-text p:last-child {
+    color: var(--dark-grey);
+}
+
+.card4-stats {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 20px;
+    color: var(--dark-grey);
+}
+
+.card4-stats i {
+    font-size: 0.6rem;
+}
+
+.card4-stat1 {
+    color: var(--light-blue);
+}
+
+.card4-stat2 {
+    color: var(--yellow);
+}
+
+
+.card4-main {
+    display: flex;
+    flex-direction: column;
 }
 
 .bar-graph-container {
+    flex-grow: 1;
     display: flex;
     align-items: center;
-    border: 1px solid red;
 }
 
-.bar-graph-img {
-    border: 1px solid red;
+
+.card4-bottom-section {
+    display: flex;
+    justify-content: space-between;
 }
 
 .tab {
@@ -553,7 +584,6 @@ i:hover {
     color: black;
 }
 
-
 .tab-icon1 {
     color: var(--pink);
 }
@@ -569,7 +599,4 @@ i:hover {
 .tab-icon4 {
     color: var(--yellow)
 }
-
-
-
 
