@@ -210,45 +210,32 @@ i:hover {
 
 .card1 {
     grid-column: 1 / 6;
-    border: 1px solid red;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px solid red;
+}
+
+.card1 p {
+    color: var(--dark-grey);
 }
 
 .card1-dates {
     display: flex;
     gap: 30px;
-    color: var(--dark-grey);
-    border: 1px solid red;
-}
-
-.graph-img-container {
     border: 1px solid red;
 }
 
 .graph-img {
-    width: 500px;
+    width: 95%;
     border: 1px solid red;
 }
 
-.card1-flex {
-    display: flex;
+.graph-container {
     border: 1px solid red;
 }
 
-.card1-text div {
-    border: 1px solid red;
-}
-
-.card1-text {
-    display: flex;
-    gap: 20px;
-    flex-grow: 1;
-    flex-direction: column;
-    border: 1px solid red;
-
-}
 
 
 /* CARD 2 */
