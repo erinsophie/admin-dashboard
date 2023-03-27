@@ -38,160 +38,162 @@ img, svg {
 }
 
 
-/* ------------------ CONTAINER GRID ------------------ */
-
-.container {
-    display: grid;
-    grid-template-columns: 200px 4fr;
-    grid-template-rows: 0.5fr 4fr;
-    height: 100%;
-}
 
 
-/* ------------------ HEADER ------------------ */
+/* ------------------ SMALLER SCREENS ------------------ */
 
-.header {
-    grid-column: 1 / 3;
-    background-color: var(--white);
+@media only screen and (min-width: 700px) {
 
-    display: grid;
-    grid-template-columns: 200px 4fr;
-}
+    /* ------------------ CONTAINER ------------------ */
 
-.title {
-    display: flex;
-    color: var(--white);
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6rem;
-    background-image: var(--pink-purple-gradient);
-}
-
-.title i {
-    font-size: 1.6rem;
-    color: var(--orange);
-}
-
-.flex-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-message {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-    color: var(--dark-grey);
-    font-size: 1.3rem;
-}
-
-.message p:last-child {
-    color: black;
-}
-
-
-.header-icons {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-}
-
-.flex-header i {
-    font-size: 20px;
-}
-
-.avatar {
-    width: 35px;
-}
-
-.search-bar {
-    width: 300px;
-    height: 20px;
-    border: none;
-    border-radius: 15px;
-    padding: 15px;
-    background-color: var(--grey);
-}
-
-
-/* TOGGLE BUTTON */
-
-
-.sidebar.dark, .header.dark {
-    background-color: #262626;
-    color: var(--white);
-  }
-
-.header.dark p {
-    color: var(--white);
-}
-
-  .main-content.darker {
-    background-color: #181818;
-  }
-
-  .dark-mode {
-    opacity: 0;
-    position: absolute;
-  }
-  
-  .dark-mode-label {
-    width: 40px;
-    height: 20px;
-    background-color: #444444;
-
-    display: flex;
-    border-radius: 50px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    transform: scale(1.5);
-  }
-  
-  .ball {
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
-  }
-
-.dark-mode:checked + .dark-mode-label .ball{
-    transform: translateX(20px);
-  }
-
-.dark-mode-label > i {
-    font-size: 12px;
-}
-
-.dark-mode-label > i:hover {
-    font-size: 12px;
-}
-
-.fa-moon {
-    color: pink;
-  }
-
-  .fa-moon:hover {
-    color: pink;
-  }
-  
-  .fa-sun {
-    color: yellow;
-  }
-
-  .fa-sun:hover {
-    color: yellow;
-  }
-
-
-
+    .container {
+        display: grid;
+        grid-template-columns: 200px 4fr;
+        grid-template-rows: 0.5fr 4fr;
+        height: 100%;
+    }
+    
+    /* ------------------ HEADER ------------------ */
+    
+    .header {
+        grid-column: 1 / 3;
+        background-color: var(--white);
+    
+        display: grid;
+        grid-template-columns: 200px 4fr;
+    }
+    
+    .title {
+        display: flex;
+        color: var(--white);
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        background-image: var(--pink-purple-gradient);
+    }
+    
+    .title i {
+        font-size: 1.6rem;
+        color: var(--orange);
+    }
+    
+    .flex-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header-message {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        align-items: center;
+        color: var(--dark-grey);
+        font-size: 1.3rem;
+    }
+    
+    .message p:last-child {
+        color: black;
+    }
+    
+    
+    .header-icons {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        align-items: center;
+    }
+    
+    .flex-header i {
+        font-size: 20px;
+    }
+    
+    .avatar {
+        width: 35px;
+    }
+    
+    .search-bar {
+        width: 300px;
+        height: 20px;
+        border: none;
+        border-radius: 15px;
+        padding: 15px;
+        background-color: var(--grey);
+    }
+    
+    
+    /* TOGGLE BUTTON */
+    
+    
+    .sidebar.dark, .header.dark {
+        background-color: #262626;
+        color: var(--white);
+      }
+    
+    .header.dark p {
+        color: var(--white);
+    }
+    
+      .main-content.darker {
+        background-color: #181818;
+      }
+    
+      .dark-mode {
+        opacity: 0;
+        position: absolute;
+      }
+      
+      .dark-mode-label {
+        width: 40px;
+        height: 20px;
+        background-color: #444444;
+    
+        display: flex;
+        border-radius: 50px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        transform: scale(1.5);
+      }
+      
+      .ball {
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+      }
+    
+    .dark-mode:checked + .dark-mode-label .ball{
+        transform: translateX(20px);
+      }
+    
+    .dark-mode-label > i {
+        font-size: 12px;
+    }
+    
+    .dark-mode-label > i:hover {
+        font-size: 12px;
+    }
+    
+    .fa-moon {
+        color: pink;
+      }
+    
+      .fa-moon:hover {
+        color: pink;
+      }
+      
+      .fa-sun {
+        color: yellow;
+      }
+    
+      .fa-sun:hover {
+        color: yellow;
+      }
 
 /* ------------------ SIDEBAR ------------------ */
 
@@ -256,31 +258,28 @@ i:hover {
     padding: 30px;
 
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 330px 150px 450px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 330px 330px 150px 150px 450px 450px;
     gap: 20px;
 }
-
-/* CARDS */
-
 
 .main-content > * {
     border-radius: 10px;
     padding: 25px;
     font-size: 0.8rem;
 }
-
+    
 .card {
     background-color: var(--white);
 }
 
-
 /* CARD 1 */
 
+.card1 {
+    grid-column: 1 / 3;
+}
 
 .card1 {
-    grid-column: 1 / 6;
-
     display: flex;
     flex-direction: column;
 }
@@ -299,35 +298,38 @@ i:hover {
     gap: 30px;
 }
 
+
 .card1-stats i {
-   font-size: 0.6rem;
-} 
+    font-size: 0.6rem;
+ } 
+ 
+ .card1-stat1 {
+     color: var(--light-blue);
+ }
+ 
+ .card1-stat2 {
+     color: var(--yellow);
+ }
+ 
+ .graph-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-grow: 1;
+ }
+ 
+ .graph-img {
+     width: 70%;
+ }
 
-.card1-stat1 {
-    color: var(--light-blue);
+
+ /* CARD 2 */
+
+ .card2 {
+    grid-column: 1 / 3;
 }
 
-.card1-stat2 {
-    color: var(--yellow);
-}
-
-.graph-container {
-    display: flex;
-    align-items: flex-end;
-    flex-grow: 1;
-}
-
-.graph-img {
-    width: 95%;
-}
-
-
-
-/* CARD 2 */
-
-.card2 {
-    grid-column: 6 / 9;
-
+ .card2 {
     display: flex;
     flex-direction: column;  
     justify-content: space-between;
@@ -340,13 +342,14 @@ i:hover {
 }
 
 .pie-chart-img {
-    width: 70%;
+    width: 40%;
 }
 
 .card2-stats {
     display: flex;
     gap: 10%;
 }
+
 
 .card2-stats div {
     display: flex;
@@ -375,11 +378,8 @@ i:hover {
     font-size: 0.6rem;
 }
 
-/* MINI CARDS */
 
-.mini-card {
-    grid-column: span 2;
-}
+/* MINI CARDS */
 
 .mini-card i {
     font-size: 4rem;
@@ -398,9 +398,7 @@ i:hover {
     font-weight: bolder;
 }
 
-
 /* MINI 1 */
-
 
 .mini1 {
     background-image: var(--pink-purple-gradient);
@@ -436,34 +434,32 @@ i:hover {
     align-items: flex-end;
 }
 
-
 /* MINI 3 */
 
 .mini3 {
-   background-image: var(--light-dark-blue);
-
-   display: flex;
-   justify-content: space-between;
-}
-
-.mini3-section1 {
+    background-image: var(--light-dark-blue);
+ 
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-}
-
-.main3-section2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.time-select {
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-}
-
+ }
+ 
+ .mini3-section1 {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ 
+ .main3-section2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+ }
+ 
+ .time-select {
+     border: none;
+     border-radius: 5px;
+     padding: 5px;
+ }
 
 
 /* MINI 4 */
@@ -476,27 +472,27 @@ i:hover {
     justify-content: space-between;
 }
 
-
-
 /* CARD 3*/
 
-
 .card3 {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+
+.todo-item div:last-child {
+    color: var(--dark-grey);
+}
+
+
 .todo-item {
     display: flex;
     justify-content: space-between;
 }
 
-.todo-item div:last-child {
-    color: var(--dark-grey);
-}
 
 
 .todo-item [type="checkbox"]:not(:checked), .todo-item 
@@ -564,12 +560,11 @@ i:hover {
 }
 
 
-
 /* CARD 4*/
 
 
 .card4 {
-    grid-column: 4 / 9;
+    grid-column: 1 / 3;
 
     display: flex;
     flex-direction: column;
@@ -620,7 +615,6 @@ i:hover {
     color: var(--yellow);
 }
 
-
 .card4-main {
     display: flex;
     flex-direction: column;
@@ -631,7 +625,6 @@ i:hover {
     display: flex;
     align-items: center;
 }
-
 
 .card4-bottom-section {
     display: flex;
@@ -670,3 +663,91 @@ i:hover {
     color: var(--yellow)
 }
 
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------ DESKTOP------------------ */
+
+
+@media only screen and (min-width: 1100px) {
+
+/* ------------------ MAIN CONTENT------------------ */
+
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 330px 150px 450px;
+}
+
+
+/* CARD 1 */
+
+
+.card1 {
+    grid-column: 1 / 6;
+}
+
+.graph-img {
+    width: 95%;
+}
+
+.graph-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+
+/* CARD 2 */
+
+.card2 {
+    grid-column: 6 / 9;
+}
+
+.pie-chart-img {
+    width: 70%;
+}
+
+
+/* MINI CARDS */
+
+
+.mini-card {
+    grid-column: span 2;
+}
+
+
+/* CARD 3*/
+
+
+.card3 {
+    grid-column: 1 / 4;
+}
+
+
+/* CARD 4*/
+
+
+.card4 {
+    grid-column: 4 / 9;
+}
+
+
+}
