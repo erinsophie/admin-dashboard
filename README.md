@@ -1,6 +1,6 @@
 # Admin Dashboard 
 
-[Live Demo](https://erinsophie.github.io/admin-dashboard/)
+# [Live Demo](https://erinsophie.github.io/admin-dashboard/)
 
 ![Admin Dashboard](images/lightmode.png)
 ![Admin Dashboard](images/darkmode.png)
