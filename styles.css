@@ -265,7 +265,6 @@ i:hover {
     border-radius: 10px;
     padding: 25px;
     font-size: 0.8rem;
-    overflow-y: auto;
 }
     
 
@@ -321,7 +320,6 @@ i:hover {
     display: flex;
     flex-direction: column;  
     justify-content: space-between;
-
     min-height: min-content;
 }
 
@@ -472,11 +470,9 @@ i:hover {
 
 .card3 {
     grid-column: span 8;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     min-height: min-content;
 }
 
@@ -490,7 +486,6 @@ i:hover {
     display: flex;
     justify-content: space-between;
 }
-
 
 
 .todo-item [type="checkbox"]:not(:checked), .todo-item 
@@ -563,10 +558,9 @@ i:hover {
 
 .card4 {
     grid-column: span 8;
-
     display: flex;
     flex-direction: column;
-
+    gap: 10px;
     min-height: min-content;
 }
 
@@ -699,7 +693,6 @@ i:hover {
 
 .card1 {
     grid-column: 1 / 6;
-    min-height: min-content;
 }
 
 .graph-container {
@@ -712,7 +705,6 @@ i:hover {
 
 .card2 {
     grid-column: 6 / 9;
-    min-height: min-content;
 }
 
 .pie-chart-img {
@@ -725,7 +717,6 @@ i:hover {
 
 .mini-card {
     grid-column: span 2;
-    min-height: min-content;
 }
 
 
@@ -734,7 +725,6 @@ i:hover {
 
 .card3 {
     grid-column: 1 / 4;
-    min-height: min-content;
 }
 
 
@@ -743,7 +733,6 @@ i:hover {
 
 .card4 {
     grid-column: 4 / 9;
-    min-height: min-content;
 }
 
 
