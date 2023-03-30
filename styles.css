@@ -672,7 +672,7 @@ i:hover {
 
 .container {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 0.160fr 1fr;
 }
 
 .main-content {
@@ -684,7 +684,7 @@ i:hover {
 
 .header {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 0.160fr 1fr;
 }
 
 
